@@ -20,6 +20,12 @@ RewriteCond %{REQUEST_FILENAME} !-f
 
 RewriteCond %{REQUEST_FILENAME} !-d
 
+RewriteRule \.(jpg|webp)$ - [R=404,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
 RewriteRule . /index.html [L]
 
 <IfModule mod_expires.c>
