@@ -1,8 +1,6 @@
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
-    order = require('gulp-order'),
     sourcemaps = require('gulp-sourcemaps'),
-    livereload = require('gulp-livereload'),
     browserSync = require('browser-sync').create();
 
 var sass = require('gulp-sass')(require('sass'));
