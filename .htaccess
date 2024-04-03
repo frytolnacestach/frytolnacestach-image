@@ -9,17 +9,34 @@ RewriteCond %{HTTP_USER_AGENT} !(Windows\sNT\s5\.[12])
 RewriteCond %{HTTP_HOST} ^(www\.)?image.frytolnacestach.cz
 RewriteBase /
 
-RewriteRule ^(.*)$ public/$1 [L]
-
-RewriteRule ^index\.html$ - [L]
+RewriteRule ^css/main\.css$ public/css/main.css [L]
+RewriteRule ^css/main.css\.map$ public/css/main.css.map [L]
+RewriteRule ^js/js_m-hamburger\.js$ public/js/js_m-hamburger.js [L]
+RewriteRule ^img/favicons/browserconfig\.xml$ public/img/favicons/browserconfig.xml [L]
+RewriteRule ^img/favicons/site\.webmanifest$ public/img/favicons/site.webmanifest [L]
+RewriteRule ^img/favicons/android-chrome-192x192\.png$ public/img/favicons/android-chrome-192x192.png [L]
+RewriteRule ^img/favicons/android-chrome-512x512\.png$ public/img/favicons/android-chrome-512x512.png [L]
+RewriteRule ^img/favicons/apple-touch-icon\.png$ public/img/favicons/apple-touch-icon.png [L]
+RewriteRule ^img/favicons/favicon-16x16\.png$ public/img/favicon-16x16.png [L]
+RewriteRule ^img/favicons/favicon-32x32\.png$ public/img/favicons/favicon-32x32.png [L]
+RewriteRule ^img/favicons/favicon\.ico$ public/img/favicons/favicon.ico [L]
+RewriteRule ^img/favicons/mstile-150x150\.png$ public/img/favicons/mstile-150x150.png [L]
+RewriteRule ^img/_base/hero\.png$ public/img/_base/hero.png [L]
+RewriteRule ^img/_base/logotype\.svg$ public/img/_base/logotype.svg [L]
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule \.(jpg|webp)$ - [R=404,L]
 
+RewriteRule ^$ public/index.html [L]
+
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /index.html [L]
+RewriteRule ^$ public/index.html [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ public/index.html [L]
 
 <IfModule mod_expires.c>
   ExpiresActive On
