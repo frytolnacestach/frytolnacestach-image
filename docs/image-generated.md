@@ -1,0 +1,2 @@
+# Velikost obrázků
+

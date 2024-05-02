@@ -1,0 +1,2 @@
+# Umístění obrázků
+
