@@ -1,5 +1,7 @@
 # Umístění obrázků
+Pro obrázky je výchozí adresář ```storage```, kde se nachází již jednotlivé adresáře podle použití obrázku v aplikaci.
 
+## Struktůra adresáře ```storage```
 ```
 ├── _default
 ├── _email
