@@ -11,6 +11,8 @@ ________________________________________________
 &nbsp;
 
 ## DOCS
-<big>**[IMAGE SIZES](docs/image-sizes.md)**</big>
-
 <big>**[IMAGE SOURCE](docs/image-source.md)**</big>
+
+<big>**[IMAGE FORMAT](docs/image-format.md)**</big>
+
+<big>**[IMAGE SIZES](docs/image-sizes.md)**</big>
