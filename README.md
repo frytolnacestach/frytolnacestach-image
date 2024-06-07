@@ -13,6 +13,8 @@ ________________________________________________
 ## DOCS
 <big>**[ASSETS](docs/assets.md)**</big>
 
+<big>**[PUBLIC](docs/public.md)**</big>
+
 <big>**[IMAGE SOURCE](docs/image-source.md)**</big>
 
 <big>**[IMAGE FORMAT](docs/image-format.md)**</big>
