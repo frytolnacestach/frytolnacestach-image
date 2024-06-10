@@ -2,7 +2,6 @@
 Adresář public obsahuje soubory které jsou načítané na webové stránce
 
 ## Struktůra adresáře ```public```
-
 ```
 ├── css
 ├── img
@@ -12,7 +11,7 @@ Adresář public obsahuje soubory které jsou načítané na webové stránce
 
 ## Rozdělení ```public```
 ### css (```public/scss```)
-Css style generováné za pomocí gulpu z adresáře ```assets/scss```.
+CSS style generováné za pomocí gulpu z adresáře ```assets/scss```.
 
 ### img (```public/img```)
 Statické obrázky.
